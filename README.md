@@ -16,7 +16,7 @@
 
 ## 演示视频
 - [在线观看](https://www.ixigua.com/i6769784326130237451/)
-- [assets/演示.mp4]()
+- [assets/演示.mp4](https://github.com/guojj33/mybase/blob/master/assets/%E6%BC%94%E7%A4%BA.mp4)
 
 ## 一、项目背景
 传统供应链金融由于交易信息并不透明，导致核心企业的信用无法在供应链中传递，下游企业向金融机构借款融资难，而将区块链和供应链金融结合，就能解决这个问题。实验在 FISCO-BCOS 区块链系统上设计供应链智能合约，并通过搭建服务器的方式，使得用户可以在网页上使用供应链金融平台。
@@ -227,7 +227,7 @@
 ## 四、界面展示
 ### 前端设计
 - 代码文件路径  
-    mybase/index.html
+    mybase/server/index.html
 
 - 界面
     ![](assets/view.PNG)  
@@ -242,7 +242,7 @@
 
 ### 后端设计
 - 代码文件路径  
-    mybase/server.js
+    mybase/server/server.js
 - 基本思路
     - 先根据请求中的 privateKey ，修改全局配置，使 privateKey 指定的账户成为调用者。
     - 将传入的 funcName 和 funcParams 做一些解析，使其满足 sendRawTransaction 的参数的格式，然后调用 sendRawTransaction 执行交易。
