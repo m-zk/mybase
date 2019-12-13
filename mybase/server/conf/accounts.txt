@@ -1,0 +1,19 @@
+//bank
+[INFO] Account Address   : 0xac8177f968fd284b247db3cabcb674c133302dec
+[INFO] Private Key (pem) : accounts/0xac8177f968fd284b247db3cabcb674c133302dec.pem
+[INFO] Public  Key (pem) : accounts/0xac8177f968fd284b247db3cabcb674c133302dec.public.pem
+
+//car company
+[INFO] Account Address   : 0x903099786823ad89230b3d6cfac7d5d474b91e50
+[INFO] Private Key (pem) : accounts/0x903099786823ad89230b3d6cfac7d5d474b91e50.pem
+[INFO] Public  Key (pem) : accounts/0x903099786823ad89230b3d6cfac7d5d474b91e50.public.pem
+
+//tyre company//
+[INFO] Account Address   : 0xc307732feeefdd5e0509463dfd30054641afc346
+[INFO] Private Key (pem) : accounts/0xc307732feeefdd5e0509463dfd30054641afc346.pem
+[INFO] Public  Key (pem) : accounts/0xc307732feeefdd5e0509463dfd30054641afc346.public.pem
+
+//hub company//
+[INFO] Account Address   : 0x971fb1b69067348194761e7cd4a23f3043bf1488
+[INFO] Private Key (pem) : accounts/0x971fb1b69067348194761e7cd4a23f3043bf1488.pem
+[INFO] Public  Key (pem) : accounts/0x971fb1b69067348194761e7cd4a23f3043bf1488.public.pem

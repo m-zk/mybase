@@ -1,0 +1,19 @@
+{
+    "privateKey": {
+        "type": "pem",
+        "value": "./0x971fb1b69067348194761e7cd4a23f3043bf1488.pem"
+    },
+    "nodes": [
+        {
+            "ip": "127.0.0.1",
+            "port": "20200"
+        }
+    ],
+    "authentication": {
+        "key": "../../fisco/nodes/127.0.0.1/sdk/sdk.key",
+        "cert": "../../fisco/nodes/127.0.0.1/sdk/sdk.crt",
+        "ca": "../../fisco/nodes/127.0.0.1/sdk/ca.crt"
+    },
+    "groupID": 1,
+    "timeout": 10000
+}

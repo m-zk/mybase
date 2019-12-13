@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<title>Supply Chain</title>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="client.js"></script>
+	</head>
+
+	<body>
+		<h1>SupplyChain</h1>
+		<form method="post">
+		Private Key:<br><input type="text" name="privateKey"><br>
+		Function Name:<br><input type="text" name="funcName"><br>
+		Function Parameters:<br><input type="text" name="funcParams"><br>
+		<input type="submit" value="submit">
+		</form>
+
+		<div>
+		<h2>Accounts</h2>
+		<table border="1">
+			<tr>
+				<th>CompanyType</th>
+				<th>Name</th>
+				<th>PrivateKey</th>
+			</tr>
+			<tr>
+				<td>Financial</td>
+				<td>Bank</td>
+				<td>0xac8177f968fd284b247db3cabcb674c133302dec</td>
+			</tr>
+			<tr>
+				<td>Kernel</td>
+				<td>Car</td>
+				<td>0x903099786823ad89230b3d6cfac7d5d474b91e50</td>
+			</tr>
+			<tr>
+				<td rowspan="2">Downstream</td>
+				<td>Tyre</td>
+				<td>0xc307732feeefdd5e0509463dfd30054641afc346</td>
+			</tr>
+			<tr>
+				<td>Hub</td>
+				<td>0x971fb1b69067348194761e7cd4a23f3043bf1488</td>
+			</tr>
+		</table>
+
+		<h2>Functions</h2>
+		<table border="1">
+			<tr>
+				<th>FuncName</th>
+				<th>FuncParams</th>
+				<th>RequiredCompanyType</th>
+			</tr>
+			<tr>
+				<td>init(address,string,string)</td>
+				<td>kernalCompany,name,location</td>
+				<td>Financial</td>
+			</tr>
+			<tr>
+				<td>balances(address)</td>
+				<td>companyAddress</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>receipts(uint256)</td>
+				<td>receiptIndex</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>findReceiptIndexWithReceiptId(uint256)</td>
+				<td>receiptId</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>issue(address,uint256)</td>
+				<td>receiver,amount</td>
+				<td>Financial</td>
+			</tr>
+			<tr>
+				<td>addCompany(address,string,string,uint8)</td>
+				<td>companyAddress,name,location,type(1:Financial,0:Other)</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>createReceipt(address,string,uint256)</td>
+				<td>to,goods,amount</td>
+				<td>Kernel</td>
+			</tr>
+			<tr>
+				<td>divideReceipt(address,string,uint256)</td>
+				<td>to,goods,amount</td>
+				<td>Downstream</td>
+			</tr>
+			<tr>
+				<td>financing(address,uint256)</td>
+				<td>from,amount</td>
+				<td>Kernel,Downstream</td>
+			</tr>
+			<tr>
+				<td>settleAccounts()</td>
+				<td>-</td>
+				<td>Kernel</td>
+		</table>
+		</div>
+	</body>
+</html>
